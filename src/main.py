@@ -14,8 +14,8 @@ def main():
     ########## Input ##########
     nqubits = 4 #initial number_of_qubits
     iteration = (nqubits)**2 #iteration_of_unopt
-    samples = 3
-    nqubits_max = 6
+    samples = 30
+    nqubits_max = 11
     method = 'concatenated' #'random' or 'concatenated'
     ###########################
     write_circuit_info(method, samples)
@@ -78,8 +78,8 @@ def multi_main():
     ########## Input ##########
     nqubits = 4 #initial number_of_qubits
     iteration = (nqubits)**2 #iteration_of_unopt
-    samples = 3
-    nqubits_max = 6
+    samples = 30
+    nqubits_max = 11
     method = 'concatenated' #'random' or 'concatenated'
     ###########################
     write_circuit_info(method, samples)
