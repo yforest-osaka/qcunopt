@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # Please choose one of the versions and run it.
 
     # Run the following line for the single-threaded version:
-    # main()
+    main()
 
     # Run the following line for the multi-threaded version:
-    multi_main()
+    # multi_main()
