@@ -8,7 +8,7 @@ Quantum circuit unoptimization operates on Python 3.9.0+, and the required packa
 For installation, run :
 
 ```bash
-git clone https://github.com/Yousaymori0812/qcunopt.git
+git clone https://github.com/yforest-osaka/qcunopt.git
 ```
 
 After that, run :
