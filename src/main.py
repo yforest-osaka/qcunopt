@@ -5,19 +5,23 @@ from tqdm import tqdm
 import multiprocessing
 from multiprocessing import Pool
 
+def input_circuit_info():
+    ########## Input ##########
+    nqubits = 4 #initial number_of_qubits
+    nqubits_max = 11
+    iteration = (nqubits)**2 #iteration_of_unopt
+    samples = 3
+    method = 'concatenated' #'random' or 'concatenated'
+    ###########################
+    return nqubits, nqubits_max, samples, method
+
 def write_circuit_info(method, samples):
     with open('circuit_info.txt', 'w') as f:
         datalist = ['Random circuit\n', f'unopt_pair = {method}\n', f'Generated {samples} circuits for each n.']
         f.writelines(datalist)
 
 def main():
-    ########## Input ##########
-    nqubits = 4 #initial number_of_qubits
-    iteration = (nqubits)**2 #iteration_of_unopt
-    samples = 3
-    nqubits_max = 11
-    method = 'concatenated' #'random' or 'concatenated'
-    ###########################
+    nqubits, nqubits_max, samples, method = input_circuit_info()
     write_circuit_info(method, samples)
     df = pd.DataFrame()
     df_Time = pd.DataFrame()
@@ -75,13 +79,7 @@ def main():
     print('Finished!')
 
 def multi_main():
-    ########## Input ##########
-    nqubits = 4 #initial number_of_qubits
-    iteration = (nqubits)**2 #iteration_of_unopt
-    samples = 3
-    nqubits_max = 11
-    method = 'concatenated' #'random' or 'concatenated'
-    ###########################
+    nqubits, nqubits_max, samples, method = input_circuit_info()
     write_circuit_info(method, samples)
     df = pd.DataFrame()
     df_unopt_level = pd.DataFrame()

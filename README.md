@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 # Executing Compiler Benchmarks
 
-We provide two types of compiler benchmarking: single-threaded version and single-threaded version. Please choose one of them and uncomment it. And then, run:
+We provide two types of compiler benchmarking: single-threaded version and multi-threaded version. Please choose one of them and uncomment it. And then, run:
 
 ```bash
 python src/main.py
