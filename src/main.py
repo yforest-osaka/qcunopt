@@ -11,9 +11,9 @@ def input_circuit_info():
     nqubits_max = 11
     iteration = (nqubits)**2 #iteration_of_unopt
     samples = 3
-    method = 'concatenated' #'random' or 'concatenated'
+    method = 'random' #'random' or 'concatenated'
     ###########################
-    return nqubits, nqubits_max, samples, method
+    return nqubits, nqubits_max, iteration, samples, method
 
 def write_circuit_info(method, samples):
     with open('circuit_info.txt', 'w') as f:
@@ -21,7 +21,7 @@ def write_circuit_info(method, samples):
         f.writelines(datalist)
 
 def main():
-    nqubits, nqubits_max, samples, method = input_circuit_info()
+    nqubits, nqubits_max, iteration, samples, method = input_circuit_info()
     write_circuit_info(method, samples)
     df = pd.DataFrame()
     df_Time = pd.DataFrame()
@@ -79,7 +79,7 @@ def main():
     print('Finished!')
 
 def multi_main():
-    nqubits, nqubits_max, samples, method = input_circuit_info()
+    nqubits, nqubits_max, iteration, samples, method = input_circuit_info()
     write_circuit_info(method, samples)
     df = pd.DataFrame()
     df_unopt_level = pd.DataFrame()
