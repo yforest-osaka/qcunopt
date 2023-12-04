@@ -22,7 +22,7 @@ pip install -r requirements.txt
 We provide two types of compiler benchmarking: single-threaded version and single-threaded version. Please choose one of them and uncomment it. And then, run:
 
 ```bash
-python main.py
+python src/main.py
 ```
 
 After execution, two output files will be generated:
@@ -35,7 +35,7 @@ Additionally, a file named "result_time.csv" will be produced for the single-thr
 
 # Example code
 
-To obtain detailed instructions for generating benchmarks through quantum circuit unoptimization, please refer to [`simulation.ipynb`](simulation.ipynb). Also, [`visualization.ipynb`](visualization.ipynb) provides an example of visualizing compiler benchmark results.
+To obtain detailed instructions for generating benchmarks through quantum circuit unoptimization, please refer to [`simulation.ipynb`](src/simulation.ipynb). Also, [`src/visualization.ipynb`](visualization.ipynb) provides an example of visualizing compiler benchmark results.
 
 <img src="data/output_result.png">　
 <img src="data/output_result_unopt_level.png"  width=50% height=50%>
