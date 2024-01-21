@@ -35,7 +35,7 @@ Additionally, a file named "result_time.csv" will be produced for the single-thr
 
 # Example code
 
-To obtain detailed instructions for generating benchmarks through quantum circuit unoptimization, please refer to [`simulation.ipynb`](src/simulation.ipynb). Also, [`src/visualization.ipynb`](visualization.ipynb) provides an example of visualizing compiler benchmark results.
+To obtain detailed instructions for generating benchmarks through quantum circuit unoptimization, please refer to [`src/simulation.ipynb`](src/simulation.ipynb). Also, [`src/visualization.ipynb`](src/visualization.ipynb) provides an example of visualizing compiler benchmark results.
 
 <img src="data/output_result.png">　
 <img src="data/output_result_unopt_level.png"  width=60% height=60%>
